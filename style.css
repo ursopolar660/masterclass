@@ -1,0 +1,284 @@
+  /* --- Reset Básico e Estilos Globais --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .cta-button {
+            background-color: #6a994e; /* Cor verde do PDF */
+            color: white;
+            padding: 18px 35px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 50px; /* Bordas bem arredondadas */
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #588142;
+        }
+
+        /* --- Seção Herói --- */
+        .hero {
+            background-color: #f8f9fa;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        
+        .hero .masterclass-title {
+            font-size: 1.2em;
+            color: #555;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .hero h1 {
+            font-size: 2.8em;
+            font-weight: bold;
+        }
+
+        .hero .highlights {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            font-weight: bold;
+        }
+
+        /* --- Seção de Vídeo --- */
+        .video-section .video-placeholder {
+            background-color: #e9ecef;
+            width: 100%;
+            height: 500px; /* Altura padrão para um vídeo player */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 1.5em;
+            color: #6c757d;
+        }
+
+        /* --- Seção de Dores --- */
+        .pain-points {
+            background-color: #f8f9fa;
+        }
+        
+        .pain-points ul {
+            list-style: none;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .pain-points li {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .pain-points .icon-x {
+            color: #d00000;
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-right: 15px;
+        }
+        
+        /* --- Seção de Benefícios --- */
+        .benefits ul {
+            list-style: none;
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .benefits li {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        
+        .benefits li::before {
+            content: '✓';
+            color: #6a994e;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        
+        /* --- Seção de Bônus e Oferta --- */
+        .offer {
+            background-color: #f8f9fa;
+        }
+        
+        .bonus-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 40px 0;
+            flex-wrap: wrap; /* Para telas menores */
+        }
+
+        .bonus-card {
+            background-color: #e6e4d9; /* Cor de fundo similar ao PDF */
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 350px;
+            flex: 1;
+        }
+
+        .bonus-card .bonus-tag {
+            background-color: #2b5329;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .bonus-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .price-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 40px auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .price-box .old-price {
+            text-decoration: line-through;
+            color: #6c757d;
+            font-size: 1.2em;
+        }
+
+        .price-box .installments {
+            font-size: 1.8em;
+        }
+        
+        .price-box .price {
+            font-size: 4em;
+            font-weight: bold;
+            color: #6a994e;
+        }
+
+        .price-box .full-price {
+            font-size: 1.2em;
+        }
+        
+        .payment-icons img {
+            height: 25px;
+            margin: 15px 5px 0 5px;
+        }
+
+        /* --- Seção de Garantia --- */
+        .guarantee img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        
+        .guarantee p {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        /* --- Seção FAQ --- */
+        .faq {
+            background-color: #f8f9fa;
+            text-align: left;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        
+        .faq-question {
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5em;
+            font-weight: normal;
+        }
+        
+        .faq-item.active .faq-question::after {
+            content: '−';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding-top: 0;
+        }
+        
+        .faq-item.active .faq-answer {
+            padding-top: 15px;
+        }
+
+        /* --- Seção Sobre --- */
+        .about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        
+        .about .author-name {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+        
+        .about p {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            font-style: italic;
+        }
