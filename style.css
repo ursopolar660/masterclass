@@ -1,284 +1,471 @@
-  /* --- Reset Básico e Estilos Globais --- */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Bebas Neue', sans-serif;
+}
 
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #ffffff;
-            color: #333;
-        }
+body{
+    /* font-family: 'Montserrat', sans-serif; */
+    background-color: #ffffff;
+    color: #333;
+    width: 100svw;
+    overflow-x: hidden;
+}
 
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            text-align: center;
-        }
+.btn{
+    background-image: linear-gradient(to right, #7CB258, #0C7D32);
+    border: none;
+    color: #fff;
+    padding: 1.1em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    align-items: center;
+    font-size: 1.8em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 7em;
+    width: 17em;
+    height: auto;
+    -webkit-border-radius: 7em;
+    -moz-border-radius: 7em;
+    -ms-border-radius: 7em;
+    -o-border-radius: 7em;
+}
 
-        h1, h2, h3 {
-            margin-bottom: 20px;
-        }
+.hero{
+    /* position: relative; */
+    text-align: center;
+    width: 100svw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 50px 20px; */
 
-        p {
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-        
-        .cta-button {
-            background-color: #6a994e; /* Cor verde do PDF */
-            color: white;
-            padding: 18px 35px;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: bold;
-            border-radius: 50px; /* Bordas bem arredondadas */
-            display: inline-block;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
+    & img {
+        max-width: 100%;
+        height: auto;
+    }
 
-        .cta-button:hover {
-            background-color: #588142;
-        }
+    & .arrow-down {
+        margin-block: 4em;
+        width: 2.3em;
+    }
+    & h2{
+        font-family: 'Montserrat', serif;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #000;
+        margin: 1em 0;
+    }
+    & h1{
+        font-size: 3.5em;
+        font-weight: 500;
+        color: #000;
+        margin: 1em 0;
+    }
 
-        /* --- Seção Herói --- */
-        .hero {
-            background-color: #f8f9fa;
-        }
+    & .div{
+        /* padding: 20px; */
+        /* background-color: #f9f9f9; */
+        border: 2px solid #ccc;
+        /* border-radius: 5px; */
+        width: 45%;
+        align-self: center;
+        margin-block: 2em;
+    }
 
-        .hero img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 30px;
-            border-radius: 8px;
-        }
-        
-        .hero .masterclass-title {
-            font-size: 1.2em;
-            color: #555;
-            letter-spacing: 2px;
-            font-weight: bold;
-        }
+    & .p1{
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #000;
+        margin: 1em 0;
 
-        .hero h1 {
-            font-size: 2.8em;
-            font-weight: bold;
-        }
+    }
 
-        .hero .highlights {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 30px;
-            font-weight: bold;
-        }
+    & .p2{
+        font-size: 1.4rem;
+        line-height: 1.5;
+        color: #000;
+        margin: 1em 0;
+        margin-bottom: 4em;
+    }
 
-        /* --- Seção de Vídeo --- */
-        .video-section .video-placeholder {
-            background-color: #e9ecef;
-            width: 100%;
-            height: 500px; /* Altura padrão para um vídeo player */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 8px;
-            font-size: 1.5em;
-            color: #6c757d;
-        }
+    & .footer-hero {
+        margin-top: 8em;
+    }
+}
+.video{
+    background-image: url('/assets/bg-video.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 60vh; */
 
-        /* --- Seção de Dores --- */
-        .pain-points {
-            background-color: #f8f9fa;
-        }
-        
-        .pain-points ul {
-            list-style: none;
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: left;
-        }
+    & h2{
+        padding: 3em;
+        color: #fff;
+        font-size: 2em;
+    }
 
-        .pain-points li {
-            font-size: 1.1em;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .pain-points .icon-x {
-            color: #d00000;
-            font-weight: bold;
-            font-size: 1.5em;
-            margin-right: 15px;
-        }
-        
-        /* --- Seção de Benefícios --- */
-        .benefits ul {
-            list-style: none;
-            max-width: 600px;
-            margin: 20px auto;
-            text-align: left;
-        }
+    & img{
+        width: 70%;
+        margin-bottom: 5em;
+    }
 
-        .benefits li {
-            font-size: 1.1em;
-            margin-bottom: 15px;
-            padding-left: 30px;
-            position: relative;
-        }
-        
-        .benefits li::before {
-            content: '✓';
-            color: #6a994e;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-        
-        /* --- Seção de Bônus e Oferta --- */
-        .offer {
-            background-color: #f8f9fa;
-        }
-        
-        .bonus-section {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 40px 0;
-            flex-wrap: wrap; /* Para telas menores */
-        }
+}
 
-        .bonus-card {
-            background-color: #e6e4d9; /* Cor de fundo similar ao PDF */
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 350px;
+.identifica{
+    background-color: #606060;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    & h3{
+        margin-top: 2em;
+        font-size: 3em;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+        margin-bottom: 0.1em;
+    }
+    & .subli{
+        border: #ccc solid 2px;
+        width: 47%;
+        margin-bottom: 5em;
+    }
+    & .item{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* gap: 3em; */
+        width: 100%;
+        margin-block: 2em;
+        padding-left: 6em;
+        & img{
+            width: 1.7em;
+            height: 1.7em;
+            object-fit: contain;
+            display: block;
+            margin-right: 2em;
+        }
+        & p{
+            font-size: 2em;
+            font-weight: 400;
+            margin-right: 1em;
+            line-height: 1.2;
+            /* width: 80%; */
             flex: 1;
         }
+    }
+    & .item:last-child {
+        margin-bottom: 8em;
+    }
 
-        .bonus-card .bonus-tag {
-            background-color: #2b5329;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 5px;
-            display: inline-block;
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-        
-        .bonus-card img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
+}
+    .configurando{
+        /* background-color: #606060; */
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-        .price-box {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            max-width: 400px;
-            margin: 40px auto;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
+    & h2{
+        margin-top: 2em;
+        font-size: 3em;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        margin-bottom: 0.3em;
+    }
 
-        .price-box .old-price {
+    & .div{
+        border: #ccc solid 2px;
+        width: 80%;
+        margin-bottom: 5em;
+    }
+
+    & .check{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        /* gap: 3em; */
+        width: 100%;
+        margin-block: 2em;
+        padding-left: 12em;
+        & img{
+            width: 1.7em;
+            height: 1.7em;
+            object-fit: contain;
+            display: block;
+            margin-right: 2em;
+        }
+        & p{
+            font-size: 2em;
+            font-weight: 400;
+            margin-right: 1em;
+            line-height: 1.2;
+            /* width: 80%; */
+            flex: 1;
+        }
+    }
+    & .check:last-child {
+    margin-bottom: 6em;
+    }
+
+    
+}
+.bonus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #000;
+    & .presente{
+        width: 100%;
+        width: 4em;
+        margin-bottom: 2em;
+    }
+
+    & h2{
+        font-size: 2.5em;
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+    & img{
+        width: 100%;
+        width: 60%;
+        height: auto;
+        margin-bottom: 1em;
+        padding-block: 3em;
+    }
+    & p{
+        font-size: 3em;
+        width: 60%;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        margin-bottom: 1em;
+
+    }
+    & .mac{
+        /* width: 100%; */
+        width: 50%;
+        margin-bottom: 2em;
+    }
+
+    & .preco{
+        border: #ccc solid 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2em;
+        flex-direction: column;
+        width: 60%;
+        border-radius: 5%;
+        -webkit-border-radius: 5%;
+        -moz-border-radius: 5%;
+        -ms-border-radius: 5%;
+        -o-border-radius: 5%;
+        /* padding: 1em; */
+        & p{
+            font-weight: 400;
+            /* padding: 1em; */
+            width: 100%;
+
+        }
+        & .risco{
             text-decoration: line-through;
-            color: #6c757d;
-            font-size: 1.2em;
+            text-decoration-color: red;
+            font-size: 2.7em;
+            color: #000;
+            margin-bottom: 0.5em;
         }
+        & h3{
+            font-size: 3em;
+            font-weight: 500;
+            /* margin-block: 1em; */
+        }
+        & h2{
+            font-size: 6em;
+            font-weight: 600;
+            /* margin-block: 1em; */
+            color: #0C7D32;
+            & span{
+                font-size: 2em;
+            }
+        }
+    }
+    & a{
+        margin-top: -2em;
+    }
+}
+.garantia{
+    background-image: url('assets/bg-video.webp');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 100vh;
 
-        .price-box .installments {
-            font-size: 1.8em;
-        }
-        
-        .price-box .price {
-            font-size: 4em;
-            font-weight: bold;
-            color: #6a994e;
-        }
+    & img{
+        width: 10em;
+        height: auto;
+        margin-block: 3em;
+    }
+    & h2{
+        font-size: 2.5em;
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+    & p{
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 1em;
+        width: 60%;
+        font-weight: 300;
+        letter-spacing: 0.06em;
+    }
+}
+.faq{
+    background-color: #f9f9f9;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
 
-        .price-box .full-price {
-            font-size: 1.2em;
-        }
-        
-        .payment-icons img {
-            height: 25px;
-            margin: 15px 5px 0 5px;
-        }
+    & h2{
+        font-size: 3em;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        margin-bottom: 0.3em;
+    }
 
-        /* --- Seção de Garantia --- */
-        .guarantee img {
-            max-width: 150px;
-            margin-bottom: 20px;
-        }
-        
-        .guarantee p {
-            max-width: 500px;
-            margin: 0 auto;
-        }
-        
-        /* --- Seção FAQ --- */
-        .faq {
-            background-color: #f8f9fa;
-            text-align: left;
-        }
+    & .div{
+        border: #ccc solid 2px;
+        width: 40%;
+        margin-bottom: 5em;
+    }
 
-        .faq-item {
-            border-bottom: 1px solid #ddd;
-            padding: 15px 0;
-        }
-        
-        .faq-question {
-            font-size: 1.1em;
-            font-weight: bold;
-            cursor: pointer;
+    & .pergunta{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        flex-direction: column;
+        /* gap: 3em; */
+        width: 100%;
+        margin-block: 2em;
+        /* padding-left: 12em; */
+
+        & .item{
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            text-align: left;
+            justify-content: left;
+            & img{
+                width: 2em;
+                /* height: 1.7em; */
+                object-fit: contain;
+                display: block;
+                margin-right: 2em;
+            }
+            & p{
+                font-size: 2.5em;
+                font-weight: 800;
+                margin-right: 1em;
+                letter-spacing: 0.06em;
+                line-height: 1.2;
+                /* width: 80%; */
+                flex: 1;
+            }
         }
-        
-        .faq-question::after {
-            content: '+';
-            font-size: 1.5em;
-            font-weight: normal;
+        & p{
+            margin-block: 1em;
+            font-size: 2em;
+            font-weight: 400;
+            width: 60%;
+            /* margin-right: 1em; */
+            line-height: 1.2;
+            /* width: 80%; */
+            flex: 1;
+            margin-bottom: 1em;
         }
-        
-        .faq-item.active .faq-question::after {
-            content: '−';
+        & .div{
+            width: 80%;
+            border: #ccc solid 1px;
         }
+        & .contato{
+            margin-bottom: 10em;
+            & a{
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+}
+.footer{
+    background-image: url('assets/footer.webp');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+    color: #ccc;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 100vh;
 
-        .faq-answer {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-            padding-top: 0;
-        }
-        
-        .faq-item.active .faq-answer {
-            padding-top: 15px;
-        }
-
-        /* --- Seção Sobre --- */
-        .about img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-        }
-        
-        .about .author-name {
-            font-size: 1.8em;
-            font-weight: bold;
-        }
-        
-        .about p {
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            font-style: italic;
-        }
+    & img{
+        margin-top: -25em;
+        width: 30em;
+    }
+    & h4{
+        margin-top: 3em;
+        font-size: 2em;
+        font-weight: 300;
+        margin-bottom: 1em;
+        letter-spacing: 0.06em;
+    }
+    & h2{
+        font-size: 5em;
+        letter-spacing: 0.05em;
+        font-weight: 400;
+        margin-bottom: 1em;
+    }
+    & p{
+        font-size: 1.8em;
+        width: 60%;
+        margin-bottom: 3em;
+    }
+    & a{
+        text-decoration: none;
+        color: #000;
+        background-color: #ccc;
+        transition: background-color 0.3s ease;
+        padding: 1em 2em;
+        font-size: 1.7em;
+        font-weight: 600;
+        border-radius: 0.5em;
+    }
+}
