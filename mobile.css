@@ -1,0 +1,162 @@
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 1.1em;
+        width: 90vw;
+        padding: 0.8em 0.5em;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+    .hero h2 {
+        font-size: 1.2em;
+    }
+    .hero .div {
+        width: 90vw;
+        margin-block: 1em;
+    }
+    .hero .p1,
+    .hero .p2 {
+        font-size: 1em;
+        margin-bottom: 2em;
+        text-align: center;
+        padding-inline: 1em;
+    }
+    .hero .arrow-down {
+        margin-block: 2em;
+        width: 2em;
+    }
+
+    .video h2 {
+        padding: 1em;
+        font-size: 1.2em;
+    }
+    .video img {
+        width: 95vw;
+        margin-bottom: 2em;
+    }
+
+    .identifica h3,
+    .configurando h2,
+    .bonus h2,
+    .garantia h2,
+    .faq h2,
+    .footer h2 {
+        font-size: 1.5em;
+    }
+    .identifica .subli,
+    .configurando .div,
+    .bonus .preco,
+    .faq .div,
+    .garantia p,
+    .footer p {
+        width: 90vw !important;
+        font-size: 1em;
+    }
+    .identifica .item,
+    .configurando .check {
+        /* flex-direction: column; */
+        align-items: flex-start;
+        padding-left: 1em;
+    }
+    .identifica .item img,
+    .configurando .check img {
+        margin-right: 1em;
+        width: 1.2em;
+        height: 1.2em;
+    }
+    .identifica .item p,
+    .configurando .check p,
+    .bonus p,
+    .faq .pergunta p {
+        font-size: 1em;
+        width: 100%;
+    }
+    .bonus{
+        text-align: center;
+    }
+    .bonus img,
+    .bonus .mac {
+        width: 90vw;
+        padding-block: 1em;
+    }
+    .bonus .preco h2 {
+        font-size: 2.5em;
+    }
+    .bonus .preco h3,
+    .bonus .preco .risco {
+        font-size: 1.2em;
+    }
+
+    .garantia img {
+        width: 6em;
+        margin-block: 1em;
+    }
+    .garantia {
+        padding: 1em;
+        min-height: unset;
+    }
+
+    .faq {
+        padding: 1em;
+        padding-top: 3em;
+        justify-content: flex-start;
+        /* text-align: center; */
+    }
+    .faq .pergunta #div{
+        text-align: center;
+        padding-inline: 1em;
+        margin-bottom: -4em;
+    }
+    .faq .pergunta .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        margin-bottom: 1em;
+    }
+    .faq .pergunta .item img {
+        width: 1.2em;
+        margin-right: 0;
+        display: block;
+    }
+    .faq .pergunta .item p {
+        font-size: 1em;
+        text-align: left;
+        margin: 0;
+    }
+    .faq .pergunta p {
+        text-align: center;
+        width: 80%;
+        font-size: 1em;
+    }
+
+    .footer {
+        padding: 1em;
+        min-height: unset;
+    }
+    .footer img {
+        margin-top: 0;
+        width: 80vw;
+    }
+    .footer h4,
+    .footer p {
+        font-size: 1em;
+        width: 100%;
+        text-align: center;
+        padding: 0.5em;
+    }
+    .footer a{
+        font-size: 1em;
+        width: 100%;
+        height: 3.4em;
+        padding: 1em;
+        text-align: center;
+    }
+}
