@@ -84,6 +84,7 @@
             align-items: flex-start;
             padding-left: 1em;
             margin-bottom: 1em;
+            width: 90%;
 
             &:before {
                 display: inline-block;
@@ -116,8 +117,8 @@
             margin-bottom: 0.5em;
             padding-bottom: 0.5em;
             position: relative;
-
-            &::after {
+            
+            &:after {
                 position: absolute;
                 bottom: 0;
                 left: 50%;
@@ -127,8 +128,9 @@
                 background-color: #cccccc;
             }
         }
-
+        
         & .check {
+            width: 90%;
             display: flex;
             align-items: flex-start;
             padding-left: 1em;
@@ -236,7 +238,7 @@
             align-items: center;
             justify-content: center;
             margin-bottom: 0.5em;
-            width: 80%;
+            width: 90%;
 
             &:before {
                 /* content: ""; */
@@ -259,11 +261,12 @@
 
         & p {
             font-size: 1.3em;
-            width: 80%;
+            width: 90%;
             text-align: left;
             padding-left: -2.2em;
             color: #444;
             margin-top: 0.3em;
+
             margin-bottom: 1.2em;
         }
 
