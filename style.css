@@ -117,8 +117,9 @@ body{
         font-size: 2em;
     }
 
-    & img{
-        width: 70%;
+    & video{
+        width: 30%;
+        /* height: 20%; */
         margin-bottom: 5em;
     }
 

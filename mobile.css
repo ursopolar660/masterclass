@@ -11,152 +11,202 @@
         padding: 0.8em 0.5em;
     }
 
-    .hero h1 {
-        font-size: 2em;
+    .hero {
+        & h1 {
+            font-size: 2em;
+        }
+        & h2 {
+            font-size: 1.2em;
+        }
+        & .div {
+            width: 90vw;
+            margin-block: 1em;
+        }
+        & .p1 {
+            font-size: 1em;
+            margin-bottom: 2em;
+            text-align: center;
+            padding-inline: 1em;
+        }
+        & .p2 {
+            font-size: 1em;
+            margin-bottom: 2em;
+            text-align: center;
+            padding-inline: 1em;
+        }
+        & .arrow-down {
+            margin-block: 2em;
+            width: 2em;
+        }
     }
-    .hero h2 {
-        font-size: 1.2em;
+
+    .video {
+        & h2 {
+            padding: 1em;
+            font-size: 1.2em;
+        }
+        & video {
+            width: 95%;
+            margin-bottom: 2em;
+        }
     }
-    .hero .div {
-        width: 90vw;
-        margin-block: 1em;
+
+    .identifica {
+        & h3 {
+            font-size: 1.5em;
+        }
+        & .subli {
+            width: 90vw !important;
+            font-size: 1em;
+        }
+        & .item {
+            align-items: flex-start;
+            padding-left: 1em;
+            & img {
+                margin-right: 1em;
+                width: 1.2em;
+                height: 1.2em;
+            }
+            & p {
+                font-size: 1.4em;
+                width: 100%;
+            }
+        }
     }
-    .hero .p1,
-    .hero .p2 {
-        font-size: 1em;
-        margin-bottom: 2em;
+    .configurando {
+        & h2 {
+            font-size: 1.5em;
+        }
+        & .div {
+            width: 90vw !important;
+            font-size: 1em;
+        }
+        & .check {
+            align-items: flex-start;
+            padding-left: 1em;
+             & img {
+                margin-right: 1em;
+                width: 1.2em;
+                height: 1.2em;
+            }
+            & p {
+                font-size: 1.4em;
+                width: 100%;
+            }
+        }
+    }
+    .bonus {
+        & h2 {
+            font-size: 1.5em;
+        }
+        & .preco {
+            width: 90vw !important;
+            font-size: 1em;
+             & h2 {
+                font-size: 2.5em;
+            }
+            & h3 {
+                font-size: 1.2em;
+            }
+            & .risco {
+                font-size: 1.2em;
+            }
+        }
+        & p {
+            font-size: 1.4em;
+            width: 100%;
+        }
         text-align: center;
-        padding-inline: 1em;
-    }
-    .hero .arrow-down {
-        margin-block: 2em;
-        width: 2em;
-    }
-
-    .video h2 {
-        padding: 1em;
-        font-size: 1.2em;
-    }
-    .video img {
-        width: 95vw;
-        margin-bottom: 2em;
-    }
-
-    .identifica h3,
-    .configurando h2,
-    .bonus h2,
-    .garantia h2,
-    .faq h2,
-    .footer h2 {
-        font-size: 1.5em;
-    }
-    .identifica .subli,
-    .configurando .div,
-    .bonus .preco,
-    .faq .div,
-    .garantia p,
-    .footer p {
-        width: 90vw !important;
-        font-size: 1em;
-    }
-    .identifica .item,
-    .configurando .check {
-        /* flex-direction: column; */
-        align-items: flex-start;
-        padding-left: 1em;
-    }
-    .identifica .item img,
-    .configurando .check img {
-        margin-right: 1em;
-        width: 1.2em;
-        height: 1.2em;
-    }
-    .identifica .item p,
-    .configurando .check p,
-    .bonus p,
-    .faq .pergunta p {
-        font-size: 1em;
-        width: 100%;
-    }
-    .bonus{
-        text-align: center;
-    }
-    .bonus img,
-    .bonus .mac {
-        width: 90vw;
-        padding-block: 1em;
-    }
-    .bonus .preco h2 {
-        font-size: 2.5em;
-    }
-    .bonus .preco h3,
-    .bonus .preco .risco {
-        font-size: 1.2em;
-    }
-
-    .garantia img {
-        width: 6em;
-        margin-block: 1em;
+        & img {
+            width: 90vw;
+            padding-block: 1em;
+        }
+        & .mac {
+            width: 90vw;
+            padding-block: 1em;
+        }
     }
     .garantia {
+        & h2 {
+            font-size: 1.5em;
+        }
+        & p {
+            width: 90vw !important;
+            font-size: 1em;
+        }
+        & img {
+            width: 6em;
+            margin-block: 1em;
+        }
         padding: 1em;
         min-height: unset;
     }
-
     .faq {
+        & h2 {
+            font-size: 1.5em;
+        }
+        & .div {
+            width: 90vw !important;
+            font-size: 1em;
+        }
         padding: 1em;
         padding-top: 3em;
-        justify-content: flex-start;
-        /* text-align: center; */
-    }
-    .faq .pergunta #div{
-        text-align: center;
-        padding-inline: 1em;
-        margin-bottom: -4em;
-    }
-    .faq .pergunta .item {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1em;
-        margin-bottom: 1em;
-    }
-    .faq .pergunta .item img {
-        width: 1.2em;
-        margin-right: 0;
-        display: block;
-    }
-    .faq .pergunta .item p {
-        font-size: 1em;
         text-align: left;
-        margin: 0;
+        & .pergunta {
+            & .item {
+                display: flex;
+                 & img {
+                    width: 2em;
+                    margin-right: 1em;
+                    margin-left: 0.5em;
+                }
+                & p {
+                    text-align: left;
+                    font-size: 1.4em;
+                }
+            }
+            & p {
+                font-size: 1.2em;
+                text-align: left;
+                padding-inline: 0.5em;
+            }
+        }
     }
-    .faq .pergunta p {
-        text-align: center;
-        width: 80%;
-        font-size: 1em;
-    }
-
     .footer {
+        & h2 {
+            font-size: 1.5em;
+        }
+        & p {
+            width: 90vw !important;
+            font-size: 1em;
+        }
+        background-size: contain;
+        background-position: bottom;
         padding: 1em;
         min-height: unset;
-    }
-    .footer img {
-        margin-top: 0;
-        width: 80vw;
-    }
-    .footer h4,
-    .footer p {
-        font-size: 1em;
-        width: 100%;
-        text-align: center;
-        padding: 0.5em;
-    }
-    .footer a{
-        font-size: 1em;
-        width: 100%;
-        height: 3.4em;
-        padding: 1em;
-        text-align: center;
+        & img {
+            margin-top: 1em;
+            width: 80vw;
+        }
+        & h4 {
+            font-size: 1em;
+            width: 100%;
+            text-align: center;
+            padding: 0.5em;
+        }
+        & p {
+            font-size: 1em;
+            width: 100%;
+            text-align: center;
+            padding: 0.5em;
+        }
+        & a{
+            font-size: 1em;
+            width: 70%;
+            height: 4em;
+            padding: 1em;
+            text-align: center;
+            margin-bottom: 2em;
+        }
     }
 }
