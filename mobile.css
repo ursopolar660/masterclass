@@ -34,13 +34,15 @@
         & .p1 {
             font-size: 1em;
             margin-bottom: 2em;
-            text-align: center;
+            text-align: justify;
+            width: 80%;
             padding-inline: 1em;
         }
         & .p2 {
             font-size: 1em;
             margin-bottom: 2em;
-            text-align: center;
+            text-align: justify;
+            width: 80%;
             padding-inline: 1em;
         }
         & .arrow-down {
@@ -62,7 +64,7 @@
     .video {
         & h2 {
             padding: 1em;
-            font-size: 1.2em;
+            font-size: 1.6em;
         }
         & video {
             width: 95%;
@@ -73,23 +75,35 @@
     .identifica {
         background-color: #4a4a4a;
         color: #ffffff;
-        padding: 40px 20px;
+        padding-block: 4em;
 
         & h3{
-            font-size: 2em;
+            /* width: 80%; */
+            margin: 0 auto 1em auto;
+            letter-spacing: 0.06em;
+            font-size: 1.5em;
         }
+        .subli{
+            content: "";
+            width: 80%;
+            height: 0.5px;
 
+        }
         & .item {
             display: flex;
-            align-items: flex-start;
-            padding-left: 1em;
+            align-items: center;
+            padding-left: 0.5em;
             margin-bottom: 1em;
-            width: 90%;
+            width: 80%;
+
+            & img{
+                width: 1.2em;
+            }
 
             &:before {
                 display: inline-block;
-                min-width: 1.2em;
-                height: 1.2em;
+                /* min-width: 1.2em; */
+                height: 1em;
                 margin-right: 1em;
                 /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e74c3c' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E"); */
                 background-size: contain;
@@ -99,6 +113,7 @@
 
             & p {
                 font-size: 1.1em;
+                text-align: justify;
                 width: 100%;
                 margin: 0;
                 line-height: 1.5;
@@ -112,7 +127,7 @@
         padding: 40px 20px;
 
         & h2 {
-            font-size: 1.8em;
+            font-size: 1.5em;
             text-align: center;
             margin-bottom: 0.5em;
             padding-bottom: 0.5em;
@@ -126,15 +141,24 @@
                 width: 50px;
                 height: 2px;
                 background-color: #cccccc;
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
             }
+        }
+
+        & .div{
+            width: 60vw !important;
+            margin: 0 auto 0.5em auto;
         }
         
         & .check {
             width: 90%;
             display: flex;
-            align-items: flex-start;
-            padding-left: 1em;
-            margin-bottom: 1em;
+            align-items: center;
+            padding-left: 0.5em;
+            margin-bottom: 0.2em;
 
             &::before {
                 display: inline-block;
@@ -146,21 +170,37 @@
                 background-repeat: no-repeat;
                 background-position: center;
             }
+
+            & img{
+                width: 1.2em;
+                /* margin-right: 1em; */
+            }
             & p{
                 font-size: 1.1em; /* Ajuste de fonte */
                 width: 100%;
+                text-align: justify;
                 margin: 0;
-                line-height: 1.5;
+                /* line-height: 1.5; */
             }
         }
     }
+    
+    
     .bonus {
-        padding-inline: 0.5em;
+        margin-top: 2em;
+        text-align: center;
+        padding-inline: 1.5em;
+
+        & .presente{
+            width: 2em;
+        }
+        
         & h2 {
             font-size: 1.5em;
         }
         & .preco {
             width: 90vw !important;
+            height: 30em;
             font-size: 1em;
              & h2 {
                 font-size: 2.5em;
@@ -171,12 +211,15 @@
             & .risco {
                 font-size: 1.2em;
             }
+            & .p1{
+                margin-top: -2em;
+
+            }
         }
         & p {
             font-size: 1.4em;
             width: 100%;
         }
-        text-align: center;
         & img {
             width: 90vw;
             padding-block: 1em;
@@ -185,7 +228,15 @@
             width: 90vw;
             padding-block: 1em;
         }
+        & .btn{
+            height: 4em;
+            width: 80vw;
+            margin-top: -3.5em;
+
+        }
     }
+
+
     .garantia {
         padding: 1em;
         min-height: unset;
@@ -193,8 +244,9 @@
             font-size: 1.5em;
         }
         & p {
-            width: 90vw !important;
+            width: 80vw !important;
             font-size: 1em;
+            text-align: justify;
         }
         & img {
             width: 6em;
@@ -207,10 +259,10 @@
     text-align: center;
 
     & h2 {
-        font-size: 1.5em;
-        text-align: center;
+        font-size: 1.6em;
+        text-align: justify;
         font-style: italic;
-        margin-bottom: 1.5em;
+        margin-bottom: 0.5em;
         position: relative;
 
         &:after {
@@ -226,8 +278,8 @@
     }
 
     & .div {
-        width: 90vw !important;
-        font-size: 1em;
+        width: 80vw !important;
+        height: fit-content;
     }
 
     & .pergunta {
@@ -235,7 +287,7 @@
 
         & .item {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             margin-bottom: 0.5em;
             width: 90%;
@@ -252,22 +304,28 @@
                 background-position: center;
             }
 
+            & img{
+                margin-top: 0.2em;
+                width: 1.2em;
+                margin-right: 1em;
+            }
+
             & p {
                 font-weight: bold;
-                font-size: 1.1em;
+                font-size: 1.3em;
                 margin: 0;
             }
         }
 
         & p {
-            font-size: 1.3em;
+            font-size: 1.1em;
             width: 90%;
-            text-align: left;
-            padding-left: -2.2em;
+            text-align: justify;
+            /* padding-left: -2.2em; */
             color: #444;
             margin-top: 0.3em;
 
-            margin-bottom: 1.2em;
+            margin-bottom: 1.6em;
         }
 
         &:not(:last-child) {
@@ -306,7 +364,7 @@
             font-size: 1.3em;
             letter-spacing: 0.07em;
             width: 100%;
-            text-align: center;
+            text-align: jus;
             padding: 0.5em;
         }
         & a{
@@ -314,7 +372,7 @@
             width: 70%;
             height: 4em;
             padding: 1em;
-            text-align: center;
+            text-align: jus;
             margin-bottom: 2em;
         }
     }
