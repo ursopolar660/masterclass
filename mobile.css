@@ -12,6 +12,15 @@
     }
 
     .hero {
+        & .img-hero{
+            width: 100%;
+            background-image: linear-gradient(135deg, #c5c0ba, #d4d4d2);
+            & .hero-img {
+                margin-block: 2em;
+                max-width: 90%;
+                height: auto;
+            }
+        }
         & h1 {
             font-size: 2em;
         }
@@ -38,6 +47,16 @@
             margin-block: 2em;
             width: 2em;
         }
+        & a{
+            margin-bottom: -6em;
+        }
+        & .footer-hero {
+            background-color: #beb9b1;
+            width: 100%;
+            content: url(assets/hero-footer-mobile.webp);
+            /* padding: 1em; */
+            text-align: center;
+        }
     }
 
     .video {
@@ -52,50 +71,89 @@
     }
 
     .identifica {
-        & h3 {
-            font-size: 1.5em;
+        background-color: #4a4a4a;
+        color: #ffffff;
+        padding: 40px 20px;
+
+        & h3{
+            font-size: 2em;
         }
-        & .subli {
-            width: 90vw !important;
-            font-size: 1em;
-        }
+
         & .item {
+            display: flex;
             align-items: flex-start;
             padding-left: 1em;
-            & img {
-                margin-right: 1em;
-                width: 1.2em;
+            margin-bottom: 1em;
+
+            &:before {
+                display: inline-block;
+                min-width: 1.2em;
                 height: 1.2em;
+                margin-right: 1em;
+                /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e74c3c' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'%3E%3C/line%3E%3Cline x1='6' y1='6' x2='18' y2='18'%3E%3C/line%3E%3C/svg%3E"); */
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
             }
+
             & p {
-                font-size: 1.4em;
+                font-size: 1.1em;
                 width: 100%;
+                margin: 0;
+                line-height: 1.5;
             }
         }
     }
+
     .configurando {
+        background-color: #f8f6f2;
+        color: #333333;
+        padding: 40px 20px;
+
         & h2 {
-            font-size: 1.5em;
+            font-size: 1.8em;
+            text-align: center;
+            margin-bottom: 0.5em;
+            padding-bottom: 0.5em;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 50px;
+                height: 2px;
+                background-color: #cccccc;
+            }
         }
-        & .div {
-            width: 90vw !important;
-            font-size: 1em;
-        }
+
         & .check {
+            display: flex;
             align-items: flex-start;
             padding-left: 1em;
-             & img {
-                margin-right: 1em;
-                width: 1.2em;
+            margin-bottom: 1em;
+
+            &::before {
+                display: inline-block;
+                min-width: 1.2em;
                 height: 1.2em;
+                margin-right: 1em;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232ecc71' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
             }
-            & p {
-                font-size: 1.4em;
+            & p{
+                font-size: 1.1em; /* Ajuste de fonte */
                 width: 100%;
+                margin: 0;
+                line-height: 1.5;
             }
         }
     }
     .bonus {
+        padding-inline: 0.5em;
         & h2 {
             font-size: 1.5em;
         }
@@ -127,6 +185,8 @@
         }
     }
     .garantia {
+        padding: 1em;
+        min-height: unset;
         & h2 {
             font-size: 1.5em;
         }
@@ -138,64 +198,110 @@
             width: 6em;
             margin-block: 1em;
         }
-        padding: 1em;
-        min-height: unset;
+
     }
     .faq {
-        & h2 {
-            font-size: 1.5em;
-        }
-        & .div {
-            width: 90vw !important;
-            font-size: 1em;
-        }
-        padding: 1em;
-        padding-top: 3em;
-        text-align: left;
-        & .pergunta {
-            & .item {
-                display: flex;
-                 & img {
-                    width: 2em;
-                    margin-right: 1em;
-                    margin-left: 0.5em;
-                }
-                & p {
-                    text-align: left;
-                    font-size: 1.4em;
-                }
+    padding-inline: 1.2em;
+    text-align: center;
+
+    & h2 {
+        font-size: 1.5em;
+        text-align: center;
+        font-style: italic;
+        margin-bottom: 1.5em;
+        position: relative;
+
+        &:after {
+            /*content: "";
+            position: absolute; */
+            bottom: -0.5em;
+            left: 70%;
+            transform: translateX(-50%);
+            /*width: 60px;
+            */height: 2px;
+            background-color: #ccc;
+}
+    }
+
+    & .div {
+        width: 90vw !important;
+        font-size: 1em;
+    }
+
+    & .pergunta {
+        margin-bottom: 2em;
+
+        & .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.5em;
+            width: 80%;
+
+            &:before {
+                /* content: ""; */
+                display: inline-block;
+                min-width: 1.2em;
+                height: 1.2em;
+                margin-right: 0.8em;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M12 16v-4'/%3E%3Cpath d='M12 8h.01'/%3E%3C/svg%3E");
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
             }
+
             & p {
-                font-size: 1.2em;
-                text-align: left;
-                padding-inline: 0.5em;
+                font-weight: bold;
+                font-size: 1.1em;
+                margin: 0;
             }
+        }
+
+        & p {
+            font-size: 1.3em;
+            width: 80%;
+            text-align: left;
+            padding-left: -2.2em;
+            color: #444;
+            margin-top: 0.3em;
+            margin-bottom: 1.2em;
+        }
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 1.2em;
         }
     }
+}
+
     .footer {
+        background-size: 100% 100%;
+        width: 98%;
+        background-position: bottom;
+        /* margin-top: -2em; */
+        padding: 1em;
+        height: max-content;
+        /* min-height: unset; */
         & h2 {
             font-size: 1.5em;
         }
         & p {
-            width: 90vw !important;
+            width: 80vw !important;
             font-size: 1em;
+            letter-spacing: 0.07em;
+            text-align: justify;
+            padding: 0.5em;
+            font-weight: 500;
         }
-        background-size: contain;
-        background-position: bottom;
-        padding: 1em;
-        min-height: unset;
-        & img {
-            margin-top: 1em;
+        
+        & #foto-marjorie {
+            margin-top: -2.4em;
             width: 80vw;
+            margin-bottom: -2.5em;
         }
         & h4 {
-            font-size: 1em;
-            width: 100%;
-            text-align: center;
-            padding: 0.5em;
-        }
-        & p {
-            font-size: 1em;
+            font-size: 1.3em;
+            letter-spacing: 0.07em;
             width: 100%;
             text-align: center;
             padding: 0.5em;
