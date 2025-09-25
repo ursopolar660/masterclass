@@ -16,7 +16,8 @@
             width: 100%;
             background-image: linear-gradient(135deg, #c5c0ba, #d4d4d2);
             & .hero-img {
-                margin-block: 2em;
+                margin-top: 2em;
+            margin-bottom: -0.2em;
                 max-width: 90%;
                 height: auto;
             }
