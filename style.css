@@ -174,8 +174,9 @@ body{
             flex: 1;
         }
     }
-    & .item:last-child {
-        margin-bottom: 8em;
+    & a {
+        margin-bottom: 3em;
+        margin-top: 1em;
     }
 
 }

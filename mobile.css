@@ -119,6 +119,14 @@
                 margin: 0;
                 line-height: 1.5;
             }
+
+        }
+        & .btn{
+            margin-top: 3em;
+            height: 4em;
+            width: 80vw;
+            font-size: 1.3em;
+            letter-spacing: 0.08em;
         }
     }
 
